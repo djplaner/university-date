@@ -4,7 +4,7 @@ Web component that solves [the specific dates problem](https://djon.es/blog/2021
 
 i.e. it turns the text in _Situation B_ into text in _Situation A_. Where the specific dates are dependent on the current offering of the course.
 
-[](https://i2.wp.com/djplaner.github.io/memex/share/blog/2021-03-06-10-04-55.png?w=1140&ssl=1)
+![Example](https://i2.wp.com/djplaner.github.io/memex/share/blog/2021-03-06-10-04-55.png)
 
 Modifies the following
 ```html

@@ -1,5 +1,6 @@
 
-import {LitElement, html, css} from 'lit';
+//import {LitElement, html, css} from 'lit';
+import {LitElement, html, css} from 'https://jspm.dev/lit-element@2.4.0';
 
 // TODO add in a singelton calendar separate from this, perhaps with a default
 // - singleton should provide method to calculate current period from web page

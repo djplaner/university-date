@@ -15,9 +15,14 @@ to include a specific date when displayed- e.g. ```Tuesday, Week 3 (28 July 2020
 
 This component is an evolution of the [trimester-date component](https://github.com/djplaner/trimester-date#readme). Starting again with a better name and hopefully better idea of web component development.
 
-## Current Limitation
+## Current Status
 
-Currently, the dates are hard coded for a particular university. This should change.
+This version 0 release is an initial foray into Web components. It has limitations, including (but not limited to)
+
+- hard-coded to the calendar of a particular University;
+- hard-coded default trimester;
+- limited testing and validation; and,
+- no automated detection of the trimester from the LMS course site.
 
 ## Setup
 

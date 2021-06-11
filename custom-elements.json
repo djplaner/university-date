@@ -2,22 +2,16 @@
   "version": "experimental",
   "tags": [
     {
-      "name": "my-element",
-      "path": "./my-element.js",
-      "description": "An example element.",
+      "name": "university-date",
+      "path": "./university-date.js",
+      "description": "Component adds specific date to end of date string.",
       "attributes": [
         {
-          "name": "name",
-          "description": "The name to say \"Hello\" to.",
+          "name": "period",
+          "description": "Specify a univerity period to base dates on, rather than the default.",
           "type": "string",
-          "default": "\"World\""
+          "default": ""
         },
-        {
-          "name": "count",
-          "description": "The number of times the button has been clicked.",
-          "type": "number",
-          "default": "0"
-        }
       ],
       "properties": [
         {

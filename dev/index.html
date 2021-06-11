@@ -1,22 +1,87 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>&lt;my-element> Demo</title>
-    <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
-    <script src="../node_modules/lit/polyfill-support.js"></script>
-    <script type="module" src="../my-element.js"></script>
-    <style>
-      p {
-        border: solid 1px blue;
-        padding: 8px;
-      }
-    </style>
-  </head>
-  <body>
-    <my-element>
-      <p>This is child content</p>
-    </my-element>
-  </body>
+
+<head>
+  <meta charset="utf-8" />
+  <title>&lt;my-element> Demo</title>
+  <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+  <script src="../node_modules/lit/polyfill-support.js"></script>
+  <script type="module" src="../university-date.js"></script>
+</head>
+
+<body>
+
+  <h3>Without university date component</h3>
+
+<p>Week 1</p>
+      <ul>
+        <li>Monday, Week 1</li>
+        <li>Tuesday, Week 1</li>
+        <li>Wednesday, Week 1</li>
+        <li>Thursday, Week 1</li>
+      </ul>
+     
+<p>Week 2</p>      
+      <ul>
+        <li>Monday, Week 2</li>
+        <li>Tuesday, Week 3</li>
+        <li>Wednesday, Week 4</li>
+        Thursday, Week 5
+      </ul>
+
+  <h3>With university-date</h3>
+
+  <p>Week 1 - hard coded to period <em>3201</em></p>
+      <ul>
+        <li>
+          <university-date period="3201">Monday, Week 1</university-date>
+        </li>
+        <li>
+          <university-date period="3201">Tuesday, Week 1</university-date>
+        </li>
+        <li>
+          <university-date period="3201">Wednesday, Week 1</university-date>
+        </li>
+        <li>
+          <university-date period="3201">Thursday, Week 1</university-date>
+        </li>
+      </ul>
+
+   <p> Week 1 - default period <em>3205</em> </p>
+      <ul>
+        <li>
+          <university-date>Monday, Week 1</university-date>
+        </li>
+        <li>
+          <university-date>Tuesday, Week 1</university-date>
+        </li>
+        <li>
+          <university-date>Wednesday, Week 1</university-date> hello
+        </li>
+        <li>
+          <university-date>Thursday, Week 1</university-date>
+        </li>
+      </ul>
+
+    <p> Week 2 - default period </p>
+      <ul>
+        <li>
+          <university-date>Monday, Week 2</university-date>
+        </li>
+        <li>
+          <university-date>Tuesday, Week 3</university-date>
+        </li>
+        <li>
+          <university-date>Wednesday, Week 4</university-date>
+        </li>
+        <li>
+          <university-date>Thursday, Week 5</university-date>
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+</body>
+
 </html>

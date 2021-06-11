@@ -1,6 +1,23 @@
-# LitElement JavaScript starter
+# \<university-date> 
 
-This project includes a sample component using LitElement with JavaScript.
+Web component that solves [the specific dates problem](https://djon.es/blog/2021/03/06/do-the-little-things-matter-in-design-for-learning/#specific-dates) with web-based learning materials.
+
+i.e. it turns the text in _Situation B_ into text in _Situation A_. Where the specific dates are dependent on the current offering of the course.
+
+[](https://i2.wp.com/djplaner.github.io/memex/share/blog/2021-03-06-10-04-55.png?w=1140&ssl=1)
+
+Modifies the following
+```html
+<university-date>Tuesday, Week 3</university-date>
+```
+
+to include a specific date when displayed- e.g. ```Tuesday, Week 3 (28 July 2020)``` based on the calendar for a specific university study period.
+
+This component is an evolution of the [trimester-date component](https://github.com/djplaner/trimester-date#readme). Starting again with a better name and hopefully better idea of web component development.
+
+## Current Limitation
+
+Currently, the dates are hard coded for a particular university. This should change.
 
 ## Setup
 

@@ -1,10 +1,9 @@
 {
-  "name": "@lit/lit-starter-js",
-  "private": true,
-  "version": "0.0.0",
-  "description": "A simple web component",
-  "main": "my-element.js",
-  "module": "my-element.js",
+  "name": "@djplaner/university-date",
+  "version": "0.0.1",
+  "description": "Web component for displaying specific university dates",
+  "main": "university-date.js",
+  "module": "university-date.js",
   "type": "module",
   "scripts": {
     "build": "echo \"This is not a TypeScript project, so no need to build.\"",

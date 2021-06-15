@@ -1,12 +1,12 @@
 {
   "name": "@djplaner/university-date",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "homepage": "https://github.com/djplaner/university-date#readme",
   "description": "Web component for displaying specific university dates",
   "main": "university-date.js",
   "module": "university-date.js",
   "type": "module",
-  "repository" : {
+  "repository": {
     "type": "git",
     "url": "https://github.com/djplaner/university-date.git"
   },

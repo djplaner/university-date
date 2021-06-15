@@ -6,6 +6,10 @@
   "main": "university-date.js",
   "module": "university-date.js",
   "type": "module",
+  "repository" : {
+    "type": "git",
+    "url": "https://github.com/djplaner/university-date.git"
+  },
   "scripts": {
     "build": "echo \"This is not a TypeScript project, so no need to build.\"",
     "lint": "npm run lint:lit-analyzer && npm run lint:eslint",

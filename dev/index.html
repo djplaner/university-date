@@ -4,127 +4,113 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>&lt;my-element> Demo</title>
+  <title>&lt;university-date&gt; Demo</title>
   <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
   <script src="../node_modules/lit/polyfill-support.js"></script>
   <script type="module" src="../university-date.js"></script>
 </head>
 
 <body>
+  <div class="navPaletteTitle">
+    <p style="font-size:small">Note: title attribute of the courseMenu_link element contains value for current period</p>
+    <h3><a href="#" role="button" aria-expanded="true" class="comboLink" aria-controls="courseMenuPalette_contents"
+        title="Collapse 1031LAW_3205  Foundations of Law (1031LAW_3205)" id="courseMenu_link">1031LAW_3205 Foundations of Law (1031LAW)  
+        <!-- title="Collapse COM14_2213_OT Creative and Professional writing (COM14_2213_OT)" id="courseMenu_link">Creative and Professional writing (COM14_2213_OT)  -->
+        <!-- title="Collapse 1031LAW_3205  Foundations of Law (1031LAW_3205_GC)" id="courseMenu_link">Foundations of Law (1031LAW_3205_GC)  -->
+        <!-- title="Collapse 1511QCM Music Theory 1 (1511QCM_3211_SB)" id="courseMenu_link">1511QCM Music Theory 1 (1511QCM_3211_SB) -->
+        </a>
+        </h3> 
+    <h3><a href="/webapps/blackboard/execute/courseMain?course_id=_88562_1" target="" class="submenuLink"
+        id="courseMenu_combo" title="Go to Course Entry Page">
+          </a></h3>
+  </div>
 
   <h3>Without university date component</h3>
 
-<p>Week 1</p>
-      <ul>
-        <li>Monday, Week 1</li>
-        <li>Tuesday, Week 1</li>
-        <li>Wednesday, Week 1</li>
-        <li>Thursday, Week 1</li>
-      </ul>
-     
-<p>Week 2</p>      
-      <ul>
-        <li>Monday, Week 2</li>
-        <li>Tuesday, Week 3</li>
-        <li>Wednesday, Week 4</li>
-        Thursday, Week 5
-      </ul>
+  <p>Week 1</p>
+  <ul>
+    <li>Monday, Week 1</li>
+    <li>Tuesday, Week 1</li>
+    <li>Wednesday, Week 1</li>
+    <li>Thursday, Week 1</li>
+  </ul>
+
+  <p>Week 2</p>
+  <ul>
+    <li>Monday, Week 2</li>
+    <li>Tuesday, Week 3</li>
+    <li>Wednesday, Week 4</li>
+    Thursday, Week 5
+  </ul>
 
   <h3>With university-date</h3>
 
   <p>Week 1 - hard coded to period <em>3201</em></p>
-      <ul>
-        <li>
-          <university-date period="3201">Monday, Week 1</university-date>
-        </li>
-        <li>
-          <university-date period="3201">Tuesday, Week 1</university-date>
-        </li>
-        <li>
-          <university-date period="3201">Wednesday, Week 1</university-date>
-        </li>
-        <li>
-          <university-date period="3201">Thursday, Week 1</university-date>
-        </li>
-      </ul>
-
-   <p> Week 1 - default period <em>3205</em> </p>
-      <ul>
-        <li>
-          <university-date>Monday, Week 1</university-date>
-        </li>
-        <li>
-          <university-date>Tuesday, Week 1</university-date>
-        </li>
-        <li>
-          <university-date>Wednesday, Week 1</university-date> hello
-        </li>
-        <li>
-          <university-date>Thursday, Week 1</university-date>
-        </li>
-      </ul>
-
-    <p> Week 2 - default period </p>
-      <ul>
-        <li>
-          <university-date>Monday, Week 2</university-date>
-        </li>
-        <li>
-          <university-date>Tuesday, Week 3</university-date>
-        </li>
-        <li>
-          <university-date>Wednesday, Week 4</university-date>
-        </li>
-        <li>
-          <university-date>Thursday, Week 5</university-date>
-        </li>
-      </ul>
+  <ul>
+    <li>
+      <university-date period="3201">Monday, Week 1</university-date>
     </li>
+    <li>
+      <university-date period="3201">Tuesday, Week 1</university-date>
+    </li>
+    <li>
+      <university-date period="3201">Wednesday, Week 1</university-date>
+    </li>
+    <li>
+      <university-date period="3201">Thursday, Week 1</university-date>
+    </li>
+  </ul>
+  <p> Week 2 - hard coded to period <em>3201</em> </p>
+  <ul>
+    <li>
+      <university-date period="3201">Monday, Week 2</university-date>
+    </li>
+    <li>
+      <university-date period="3201">Tuesday, Week 3</university-date>
+    </li>
+    <li>
+      <university-date period="3201">Wednesday, Week 4</university-date>
+    </li>
+    <li>
+      <university-date period="3201">Thursday, Week 5</university-date>
+    </li>
+  </ul>
+
+
+  <p> Week 1 - default period - based on courseMenu_link </p>
+  <ul>
+    <li>
+      <university-date>Monday, Week 1</university-date>
+    </li>
+    <li>
+      <university-date>Tuesday, Week 1</university-date>
+    </li>
+    <li>
+      <university-date>Wednesday, Week 1</university-date> hello
+    </li>
+    <li>
+      <university-date>Thursday, Week 1</university-date>
+    </li>
+  </ul>
+
+  <p> Week 2 - default period </p>
+  <ul>
+    <li>
+      <university-date>Monday, Week 2</university-date>
+    </li>
+    <li>
+      <university-date>Tuesday, Week 3</university-date>
+    </li>
+    <li>
+      <university-date>Wednesday, Week 4</university-date>
+    </li>
+    <li>
+      <university-date>Thursday, Week 5</university-date>
+    </li>
+  </ul>
+  </li>
   </ul>
 
 </body>
 
 </html>
-
-
-<p>
-  <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.5.0/webcomponents-loader.js"></script>
-  <script src="https://unpkg.com/lit@2.0.0-rc.2/polyfill-support.js"></script>
-  <script type="module" src="https://unpkg.com/@djplaner/university-date@0.0.1/university-date.js"></script>
-  </p>
-  <h3>Without university date component</h3>
-  <p>Week 1</p>
-  <ul>
-  <li>Monday, Week 1</li>
-  <li>Tuesday, Week 1</li>
-  <li>Wednesday, Week 1</li>
-  <li>Thursday, Week 1</li>
-  </ul>
-  <p>Week 2</p>
-  <ul>
-  <li>Monday, Week 2</li>
-  <li>Tuesday, Week 3</li>
-  <li>Wednesday, Week 4</li>
-  Thursday, Week 5</ul>
-  <h3>With university-date</h3>
-  <p>Week 1 - hard coded to period <em>3201</em></p>
-  <ul>
-  <li><university-date period="3201"> Monday, Week 1 </university-date></li>
-  <li><university-date period="3201"> Tuesday, Week 1 </university-date></li>
-  <li><university-date period="3201"> Wednesday, Week 1 </university-date></li>
-  <li><university-date period="3201"> Thursday, Week 1 </university-date></li>
-  </ul>
-  <p>Week 1 - default period <em>3205</em></p>
-  <ul>
-  <li><university-date> Monday, Week 1 </university-date></li>
-  <li><university-date> Tuesday, Week 1 </university-date></li>
-  <li><university-date> Wednesday, Week 1 </university-date> hello</li>
-  <li><university-date> Thursday, Week 1 </university-date></li>
-  </ul>
-  <p>Week 2 - default period</p>
-  <ul>
-  <li><university-date> Monday, Week 2 </university-date></li>
-  <li><university-date> Tuesday, Week 3 </university-date></li>
-  <li><university-date> Wednesday, Week 4 </university-date></li>
-  <li><university-date> Thursday, Week 5 </university-date></li>
-  </ul>

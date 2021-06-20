@@ -28,26 +28,34 @@ export class UniversityDate extends LitElement {
     this.dateString = '';
     this.period = null;
 
-    if (typeof window.UniversityDateCalendarBroker !== "undefined") {
+    if (typeof window.UniversityDateCalendarBroker !== 'undefined') {
       this.calendarBroker = window.UniversityDateCalendarBroker.requestAvailability();
     }
   }
 
   render() {
-    if (typeof this.calendarBroker === "undefined") {
+    // no calendar broker, so can't make any change, leave the text as is
+    if (typeof this.calendarBroker === 'undefined') {
       return html`${this.innerHTML}`;
     }
 
+    // try to set this.dateString to the period specific date for the currentPeriod
     this.currentPeriod = this.calendarBroker.getCurrentPeriod();
     this.parseDate();
 
     if (this.dateString === '') {
-      // couldn't get date
+      // couldn't get date, so leave as is
       return html`${this.innerHTML}`;
     }
+    // add the specific date to the date string
     return html`${this.innerHTML} (${this.dateString})`;
   }
 
+  /**
+   * @function parseDate
+   * Attempt to parse the text from the element as a period specific date i.e. Monday, Week 5  
+   * 
+   */
   parseDate() {
     let dateText = this.innerHTML;
 
@@ -67,10 +75,7 @@ export class UniversityDate extends LitElement {
       day = m[1];
       week = m[m.length - 1];
       this.setDateString(week, day);
-    } else {
-      // couldn't match the date, finish up
-      return false;
-    }
+    } 
   }
 
   /**

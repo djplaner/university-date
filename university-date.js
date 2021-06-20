@@ -68,7 +68,7 @@ export class UniversityDate extends LitElement {
     let day = '',
       week = '';
     let m = dateText.match(
-      /^.*(((mon|tue(s)?|wed(nes)?|thu|thur(s)?|fri|sat(ur)?|sun)(day)?)).*week\s*([0-9]*).*$/i
+      /^.*(((mon|tue(s)?|wed(nes)?|thu|thur(s)?|fri|sat(ur)?|sun)(day)?)).*week\s*([0-9]*).*$/im
     );
     if (m) {
       // TODO need to convert the short days to long days?

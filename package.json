@@ -1,6 +1,6 @@
 {
   "name": "@djplaner/university-date",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "homepage": "https://github.com/djplaner/university-date#readme",
   "description": "Web component for displaying specific university dates",
   "main": "university-date.js",

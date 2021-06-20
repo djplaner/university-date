@@ -53,8 +53,8 @@ export class UniversityDate extends LitElement {
 
   /**
    * @function parseDate
-   * Attempt to parse the text from the element as a period specific date i.e. Monday, Week 5  
-   * 
+   * Attempt to parse the text from the element as a period specific date i.e. Monday, Week 5
+   *
    */
   parseDate() {
     let dateText = this.innerHTML;
@@ -68,14 +68,14 @@ export class UniversityDate extends LitElement {
     let day = '',
       week = '';
     let m = dateText.match(
-      /.*\b(((mon|tues|wed(nes)?|thur(s)?|fri|sat(ur)?|sun)(day)?))\b[,]*[ ]*week *\b([0-9]*)/i
+      /^.*(((mon|tue(s)?|wed(nes)?|thu|thur(s)?|fri|sat(ur)?|sun)(day)?)).*week\s*([0-9]*).*$/i
     );
     if (m) {
       // TODO need to convert the short days to long days?
       day = m[1];
       week = m[m.length - 1];
       this.setDateString(week, day);
-    } 
+    }
   }
 
   /**

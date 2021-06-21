@@ -110,12 +110,12 @@ export class UniversityDate extends LitElement {
     // if dayOfWeek is not Monday, increment the date from the start of the week
     if (dayOfWeek !== 'monday') {
       var dayToNum = {
-        tuesday: 1,
-        wednesday: 2,
-        thursday: 3,
-        friday: 4,
-        saturday: 5,
-        sunday: 6,
+        tuesday: 1, tue: 1, tues : 1,
+        wednesday: 2, wed: 2, wednes: 1,
+        thursday: 3, thu: 3, thur: 3,
+        friday: 4, fri: 4, 
+        saturday: 5, sat: 5, satur: 5,
+        sunday: 6, sun: 6
       };
       if (dayOfWeek in dayToNum) {
         d.setDate(d.getDate() + dayToNum[dayOfWeek.toLowerCase()]);
